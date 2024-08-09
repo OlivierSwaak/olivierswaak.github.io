@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.invisible {
+    display: none;
+}
+</style>
+<script>
+    function checkPwd() {
+        var input = document.getElementById('input').value;
+        if (input == "Pernis") {
+            document.getElementById('table').classList.toggle('invisible');
+            document.getElementById('wrapper').classList.toggle('invisible');
+        }
+    }
+</script>
+</head>
+<body>
+
+<h2>Signalement - Mw. A. Visser</h2>
+
+<div id="wrapper"><input type="password" id="input" placeholder="locatie"> <button type="button" onclick="checkPwd()">Enter</button></div>
+
+<div id="table" class="invisible">
+    <h2>Ze was voor het eerst gesignaleerd bij het zuidelijkste puntje van dat eerste kleine parkje met dat slootje wat je tegenkomt als je van het metrostation komt en via Schalekampplein de Ring afloopt. Hier liep ze rechtstreeks langs het groen naar de Boonstraat om daar een afslag naar links te maken. Na te zijn uitgekomen op de Vermaetweg, draaide ze zich om en liep weer terug. Vervolgens is ze via de ring linksaf gegaan in de Burgemeester van Esstraat, ingeslagen in de Cornelis van Dijckstraat en weer afgeslagen naar de straat die ten oosten van dat parkje liep en zo weer op de Ring gekomen. Het leek wel alsof er iemand achter haar aan zat. Vervolgens is ze bij 113 er af gegaan, naar links gegaan bij die ‘cul-de-sac’ van nummer 28, naar de hoofdweg van de Verhulstraat gegaan, rechtsaf geslagen en toen nogmaals rechts naar de G.A. Soetemanweg gelopen totdat je weer bij dat parkje kwam. Toen is ze weer helemaal dezelfde route teruggelopen naar de Ring, om daar als laatste in te slaan in de Van Zyll de Jongstraat. Bij de kruising met de G.A. Soetemanweg verdween ze.</p>
+</div>
+
+</body>
+</html>
+
